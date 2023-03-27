@@ -17,4 +17,13 @@
     <PackageReference Include="Microsoft.VisualStudio.Text.UI.Wpf" Version="$(MSVSTextVersion)" />
   </ItemGroup>
 
+
+  <PropertyGroup>
+    <PostBuildEvent>
+
+      xcopy /Y /E "$(TargetDir)*" "..\..\..\..\..\..\dnSpy\dnSpy\bin\Debug\$(TargetFramework)\Extensions\Example1.Extension\"
+    </PostBuildEvent>
+  </PropertyGroup>
+
+
 </Project>

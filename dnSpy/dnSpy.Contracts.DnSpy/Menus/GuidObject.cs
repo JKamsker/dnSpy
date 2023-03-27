@@ -18,17 +18,26 @@
 */
 
 using System;
+using System.Diagnostics;
 
 namespace dnSpy.Contracts.Menus {
 	/// <summary>
 	/// Object with a <see cref="System.Guid"/>
 	/// </summary>
+	[DebuggerDisplay("{DebuggerDisplay,nq}")]
 	public readonly struct GuidObject {
 		/// <summary>Object</summary>
 		public object? Object { get; }
 
 		/// <summary>Guid of object</summary>
 		public Guid Guid { get; }
+
+		[DebuggerHidden]
+		[DebuggerBrowsable(DebuggerBrowsableState.Never)]
+
+		//private string DebuggerDisplay => $"[{Guid}] {Object}";
+		private string DebuggerDisplay => $"{Object}";
+
 
 		/// <summary>
 		/// Constructor

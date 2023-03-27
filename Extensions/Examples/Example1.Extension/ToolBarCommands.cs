@@ -27,7 +27,7 @@ namespace Example1.Extension {
 		TBCommand2() {
 			comboBox = new ComboBox();
 			comboBox.Width = 100;
-			comboBox.Items.Add("Item #1");
+			comboBox.Items.Add("Item #1 You Suck");
 			comboBox.Items.Add("Item #2");
 			comboBox.Items.Add("Item #3");
 			comboBox.Items.Add("Item #4");

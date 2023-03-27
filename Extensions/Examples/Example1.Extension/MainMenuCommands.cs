@@ -17,7 +17,7 @@ namespace Example1.Extension {
 	sealed class DebugMenu : IMenu {
 	}
 
-	[ExportMenuItem(OwnerGuid = MainMenuConstants.APP_MENU_EXTENSION, Header = "Command #1", Group = MainMenuConstants.GROUP_EXTENSION_MENU1, Order = 0)]
+	[ExportMenuItem(OwnerGuid = MainMenuConstants.APP_MENU_EXTENSION, Header = "Command #1 Get fucked", Group = MainMenuConstants.GROUP_EXTENSION_MENU1, Order = 0)]
 	sealed class ExtensionCommand1 : MenuItemBase {
 		public override void Execute(IMenuItemContext context) => MsgBox.Instance.Show("Command #1");
 	}
